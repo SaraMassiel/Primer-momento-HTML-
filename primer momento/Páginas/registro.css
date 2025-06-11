@@ -1,0 +1,112 @@
+:root {
+    --rojo-marte: #d64000;
+    --naranja-brillo: #ffae42;
+    --fondo: #1a0d0d;
+    --fondo-formulario: rgba(39, 14, 14, 0.95);
+    --input-bg: #2e1a1a;
+    --texto: #fbe8d3;
+    --borde-suave: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('Imagenes/Estrellas.gif') no-repeat center top;
+    background-attachment: scroll;
+    background-size: cover;
+    color: var(--texto);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.registro {
+    background-color: var(--fondo-formulario);
+    border-radius: var(--borde-suave);
+    padding: 30px;
+    box-shadow: 0 0 25px var(--rojo-marte);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--naranja-brillo);
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px var(--rojo-marte);
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    color: var(--naranja-brillo);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: var(--borde-suave);
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--texto);
+    font-size: 1em;
+    box-shadow: inset 0 0 6px rgba(255, 165, 0, 0.15);
+}
+
+input::placeholder {
+    color: #c99;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+a {
+    color: var(--naranja-brillo);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: var(--borde-suave);
+    background-color: var(--rojo-marte);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(214, 64, 0, 0.6);
+}
+
+button:hover {
+    background-color: #b73200;
+    box-shadow: 0 0 16px rgba(255, 87, 34, 0.9);
+}
+
+@media (max-width: 480px) {
+    .registro {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+}

@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Viaje a Marte</title>
+    <title>Reserva tu viaje a Marte</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
-<h1>Formulario de registro: Viaje a Marte</h1>
+    <div class="contenido">
+        <h1 class="fade-in">¡Aventura Interplanetaria: Tu Viaje a Marte Comienza Aquí!</h1>
+        <img src="Imagenes/base.jpg" alt="Base marciana" width="500" class="fade-in">
 
-    <form action="">
+        <p class="fade-in center">
+            <a class="btn-reserva" href="login.html">Iniciar Sesión</a>
+            <a class="btn-reserva" href="registro.html">Registrarse</a>
+        </p>
 
-<label for="Pick ID">Elige tu tipo de documento: </label>
-<select>
+        <h2 class="fade-in">¿Por Qué Viajar a Marte?</h2>
+        <p class="fade-in">
+            Explora las maravillas del planeta rojo. Desde sus imponentes cañones y volcanes gigantes hasta sus
+            misteriosas lunas: Fobos y Deimos.
+            Disfruta de atardeceres azules, antiguos lechos de ríos, y sé parte del futuro de la humanidad en otro
+            mundo.
+            No son solo unas vacaciones, es una inmersión en el futuro de la exploración espacial.
+        </p>
 
-    <option value="Cedula ciudadania">Cedula de ciudadania</option>
-    <option value="Tarjeta identidad">Tarjeta de identidad</option>
-    <option value="Cedula Extranjeria">Cedula de extranjeria</option>
-    
-</select>
-<br><br>
-<label for="Numero ID">Número de identificación: </label>
-<input type="text" id="Numero ID" minlength="10" maxlength="10" placeholder="1234567890" required>
-<br><br>
-<label for="P.nombre">Primer nombre: </label>
-<input type="text" id="P.nombre" maxlength="65" placeholder="Solo primer nombre" required>
-<br><br>
-<label for="S.nombre">Segundo nombre: </label>
-<input type="text" id="S.nombre" maxlength="65" placeholder="Solo segundo nombre">
-<br><br>
-<label for="P.apellido">Primer apellido: </label>
-<input type="text" id="P.apellido" maxlength="65" placeholder="Solo primer apellido" required>
-<br><br>
-<label for="S.apellido">Segundo apellido: </label>
-<input type="text" id="S.apellido" maxlength="65" placeholder="Solo segundo apellido">
-<br><br>
-<label for="Fecha nacimiento">Fecha de nacimiento: </label>
-<input type="date" id="Fecha nacimiento" required>
-<br><br>
-<label for="Pais">Selecciona tu país: </label>
-<select id="Pais" required>
+        <h2 class="fade-in">Hoteles en Marte: Tu Estancia en la Base "Ares I"</h2>
+        <p class="fade-in">Ofrecemos alojamientos adaptados a tus necesidades:</p>
 
-    <option value="Colombia">Colombia</option>
-    <option value="Argentina">Argentina</option>
-    <option value="Brasil">Brasil</option>
-    <option value="Panama">Panama</option>
+        <ul class="fade-in">
+            <li><strong>Módulos Estándar:</strong> Habitaciones individuales o dobles con vistas al paisaje marciano.
+            </li>
+            <li><strong>Suites Olympus:</strong> Gimnasio privado y acceso a miradores exclusivos.</li>
+            <li><strong>Domos Gale:</strong> Para científicos curiosos, con acceso a laboratorios y zonas de estudio.
+            </li>
+        </ul>
 
-</select>
-<br><br>
-<label for="Correo">Correo electrónico: </label>
-<input type="email" id="Correo" placeholder="ejemplo@ejemplo.com" required>
-<br><br>
-<label for="Telefono">Ingresa tu número de telefono: </label>
-<input type="number" id="Telefono" maxlength="10" placeholder="320 5555 555" required>
-<br><br>
-<label for="Contraseña">Contraseña: </label>
-<input type="password" id="" min="8" maxlength="10" placeholder="ejemplo04*." required>
-<br><br>
-<label for="Checkbox"></label>
-<input type="checkbox" id="miCheckbox">
-  <a href="Riesgos, terminos y condiciones.html" target="_blank">Aceptar riesgos, terminos y condiciones</a>
-</label>
-<br><br>
-<button type="reset">Limpiar</button>
-<button type="submit">enviar</button>
-<br><br>
-<button onclick="window.location.href='datos_Aspirantes.html'">Rellenar cuestionario de aspirante</button>
-<button onclick="window.location.href='landing.html'">Inicio</button>
-<button onclick="window.location.href='login.html'">Iniciar sesion</button>
+        <img src="Imagenes/MartianHotel.jpg" alt="Hotel marciano" width="500" class="fade-in">
 
-    </form>
+        <p class="fade-in">Incluyen: menús adaptados al entorno espacial, gimnasio, biblioteca digital, asistencia
+            médica 24/7 y más.</p>
 
+        <h2 class="fade-in">Paquetes de Viaje a Marte</h2>
+        <div class="tabla-scroll fade-in">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Paquete Explorador<br>(1 mes en Marte)</th>
+                        <th>Pionero<br>(2 meses)</th>
+                        <th>Colonizador<br>(3 meses)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alojamiento</td>
+                        <td>Estándar</td>
+                        <td>Suites de Lujo Olympus</td>
+                        <td>Domo Gale</td>
+                    </tr>
+                    <tr>
+                        <td>Actividades</td>
+                        <td>3 excursiones guiadas</td>
+                        <td>5 excursiones + 1 experiencia científica</td>
+                        <td>7 excursiones + 2 experiencias + 1 misión</td>
+                    </tr>
+                    <tr>
+                        <td>Vistas</td>
+                        <td>Ríos secos, cascadas y mar gelatinoso</td>
+                        <td>Volcán activo y pilotaje de nave</td>
+                        <td>Encuentro alienígena y búsqueda de tesoros</td>
+                    </tr>
+                    <tr>
+                        <td>Precio (COP)</td>
+                        <td>$50.600.000.000 por persona</td>
+                        <td>$85.800.000.000 por persona</td>
+                        <td>$190.500.000.000 por persona</td>
+                    </tr>
+                    <tr>
+                        <td>Financiamiento</td>
+                        <td>Crédito espacial</td>
+                        <td>Crédito espacial</td>
+                        <td>Crédito espacial o patrocinio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="fade-in">Preparación para el Viaje</h2>
+        <p class="fade-in">Incluye entrenamiento físico, psicológico y de supervivencia espacial. Obligatorios y tienen una duración de 1 año.”
+        </p>
+        <img src="Imagenes/MartianGym.jpg" alt="Entrenamiento en Marte" class="fade-in">
+
+        <h2 class="fade-in">Cumple el sueño de tu niño interior</h2>
+        <p class="fade-in">Esta es tu oportunidad de hacer historia. ¿Te vas a quedar mirando desde la Tierra?</p>
+
+        <video controls class="fade-in">
+            <source src="video/viaje-a-marte-ytshorts.savetube.me.mp4" type="video/mp4">
+        </video>
+
+        <a href="registro.html">¡Reserva tu cupo hoy!</a>
+        <p class="fade-in center">
+            <a class="btn-reserva" href="https://www.nasa.gov/" target="_blank">Conoce más dando clic aquí</a>
+        </p>
+    </div>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        faders.forEach(el => observer.observe(el));
+    </script>
 </body>
+
 </html>

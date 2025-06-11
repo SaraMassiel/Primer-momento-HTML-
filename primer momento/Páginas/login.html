@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in Aspirantes</title>
+    <link rel="stylesheet" href="login.css" />
 </head>
+
 <body>
-    <h1>Inicio de sesion</h1>
-    <FORM>
-        <p>Ingresa tus correo electrónico y tu contraseña: </p>
-    <label for="Correo">Correo electrónico: </label>
-    <input type="email" id="Correo" placeholder="ejemplo@ejemplo.com" required>
-    <br><br>
-    <label for="Contraseña">Contraseña: </label>
-    <input type="password" id="" min="8" maxlength="10" placeholder="ejemplo04*." required>
-    <br><br>
-    <p>¿No tienes una cuenta aún?</p> 
-    <a href="index.html" target="_blank">¡Crea una!</a>
-    <br><br>
-    <button type="submit">enviar</button>
-        <button onclick="window.location.href='index.html'">Registrarse</button>
-        <button onclick="window.location.href='landing.html'">Inicio</button>
-    </FORM>
+    <div>
+        <h1>Inicio de sesión</h1>
+        <form>
+            <p>Ingresa tu correo electrónico y tu contraseña:</p>
 
+            <label for="Correo">Correo electrónico:</label>
+            <input type="email" id="Correo" placeholder="ejemplo@ejemplo.com" required />
 
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" minlength="8" maxlength="10" placeholder="ejemplo04*." required />
+
+            <p>¿No tienes una cuenta aún?</p>
+            <a href="index.html" target="_blank">Crea una.</a>
+            <br /><br />
+
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="window.location.href='registro.html'">Registrarse</button>
+            <button type="button" onclick="window.location.href='index.html'">Inicio</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("¡Bienvenido al módulo marciano! Tu viaje está a punto de comenzar... 🪐");
+        });
+    </script>
 </body>
+
 </html>
